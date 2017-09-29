@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.scene{
+			width: 600px;
+			height: 600px;
+			background: #000;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -300px;
+			margin-left: -300px;
+			border-top: 1px solid #000;
+			border-left: 1px solid #000;
+		}
+		.block{
+			width: 29px;
+			height: 29px;
+            background: #fff;
+			border-bottom: 1px solid #000;
+			border-right: 1px solid #000;
+			float: left;
+		}
+		.hot{
+			background: #78ddff;
+		}
+	</style>
+	<script src='snake.js'></script>
+</head>
+<body>
+	<div class="scene"></div>
+	<script>
+		window.onload=function(){
+			let snake=new Snake();
+			snake.start();
+		}
+	</script>
+</body>
+</html>
